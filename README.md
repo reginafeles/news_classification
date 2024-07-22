@@ -18,7 +18,7 @@ https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset
 5. CNN-BiLSTM
 
 
-##I. In this project work we trained 15 models:
+## I. In this project work we trained 15 models:
 
 CNN with Word2Vec Embedding layer
 CNN with Glove Embedding layer
@@ -36,14 +36,14 @@ CNN-BiLSTM with Word2Vec Embedding layer
 CNN-BiLSTM with Glove Embedding layer
 CNN-BiLSTM with Glove Embedding layer
 
-##II. Models Evaluation
+## II. Models Evaluation
 
 Overall, all models exhibit some degree of overfitting
 Some possible solutions were applied to tackle this problem, including regularization, BatchNormalization, Dropouts; however, they didn't improve the models' performance
 In accordance with the f1-score metric, the models best predict the “Sports” class, “World” is in second place, “Technology” is in third place, and “Business” is in fourth place. Initially we thought that this was due to the length of the text (texts about sports are longer and contain more features). However, EDA showed that the average length of texts about sports is shorter. We can conclude that our models also work well on short texts.
 Overall performance of models is in the table below
 
-[]
+[](https://github.com/reginafeles/news_classsification/accuracy.png)
 
 Models with FastText show slightly better performance than models with Word2Vec or Glove Embeddings. This confirms similar conclusion ("FastText <...> generally outperforms other combinations") obtained by the authors of the article (Wang et al., 2021). In addition, our findings show that models with Glove are slightly better than with Word2Vec Embedding.
 
